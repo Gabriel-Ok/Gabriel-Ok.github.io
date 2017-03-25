@@ -67,3 +67,36 @@ body
   transform: rotate(-40deg);
 
 }
+.me
+ {
+  z-index: 40;
+}
+.me span
+{
+  display: none;
+}
+.me:hover
+{
+  z-index: 42;
+}
+.me:hover span
+{
+  display: inline;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  position: inherit;
+}
+.display
+{
+  display: inline;
+  vertical-align: middle;
+position: absolute;
+  color: black;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 600%;
+  z-index: 45%;
+}

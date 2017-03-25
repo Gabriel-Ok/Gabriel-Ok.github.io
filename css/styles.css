@@ -1,5 +1,11 @@
 body
 {
-  background-image: url(https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjymqK2h_HSAhWEwxQKHZgxC7wQjRwIBw&url=http%3A%2F%2Fwww.theverge.com%2F2013%2F3%2F19%2F4124128%2Fgoogle-animated-gif-image-search&psig=AFQjCNEvpUi5FtVEjaHPK_eyIQ1Y_0YqVg&ust=1490510357163777);
-background-attachment: fixed;
+  background-attachment: fixed;
+  background-color: #aaaaaa;
+  background-image: url(http://img12.funscrape.com/en/welcome/74.gif);
+}
+.intro
+{
+color: green;
+font-style: italic;
 }

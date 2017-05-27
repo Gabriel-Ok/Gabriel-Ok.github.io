@@ -2,41 +2,124 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\styles.css">
+<link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+    <script type="text/javascript" src="js\jquery.js">
+
+    </script>
     <title>Gabriel-Ok.com</title>
   </head>
   <body>
-    <!-- <video  loop muted autoplay poster  src="../website/ShootingClip.MP4"    class="posterimage.jpg"></video> -->
-  <!-- <p class="bod"><img src="website/cat.gif" alt="http://img12.funscrape.com/en/welcome/74.gif"></p> -->
-    <p class="intro">Welcome to my first <div class="intro">website</div></p>
-   and it's all <a href="#" class="tooltip">About Me
-    <span>
-        <ul>
-        <li class="about">Gabriel Okiring, a Frontend Web Developer,plus experience in
-        Human Resource Management.</li>
-        <li class="about">My contact, email: gokiring@gmail.com, Tel: +254708906873</li>
-      </ul>
-      </span></a>
-    <form class="container" action="index.html" method="post">
-      <div class="search">Search anything from here:
-</div>
-<input type="text" name="" value="">
-    </form>
-    <div class="images">
-    <img src="http://www.keyhubs.com/wp-content/uploads/2013/07/hobbies.jpg" alt="">
-    <p>My hobby is simple.... playing the guitar</p>
-</div>
-<div class="images1">
-  <p> <a href="https://github.com/Gabriel-Ok">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgYf87aigeq92CUco4Tqr6uk7lIexWGqRHwI4dNI0aB89adUekw" alt="" align=right>
-</a></p>
-</div>
-  <a href="#" class="me">
-  <img src="https://avatars3.githubusercontent.com/u/26415175?v=3&s=460" alt="">
+<div class="container">
+   <div class="col-sm-12">
 
-<span>
-  <p class="display">yap... that's ME.
-  </P>
-</span></a>
+
+
+      <a href="#"><span class="col-sm-2"><br>
+<marquee behavior="slide" direction="left" class="icon">home</marquee>
+      </span></a>
+      <a href="#panel1"><span class="col-sm-2"><br>
+   <marquee behavior="slide" direction="left" class="icon">interests</marquee>
+      </span></a>
+      <a href="#panel2"><span class="col-sm-2"><br>
+   <marquee behavior="slide" direction="left" class="icon">portfolio</marquee>
+      </span></a>
+      <a href="#panel3"><span class="col-sm-2"><br>
+   <marquee behavior="slide" direction="left" class="icon">about me</marquee>
+      </span></a>
+      <a href="#panel4"><span class="col-sm-2"><br>
+<marquee behavior="slide" direction="left" class="icon">contacts</marquee>
+      </span></a>
+   </div>
+<br><br><br><br><br><br><br><br><br><br>
+   <p class="headn">welcome to Gabriel's website</p>
+</div>
+
+<div class="" id="panel1">
+
+</div>
+<div id="my-pics" class="carousel slide" data-ride="carousel" >
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+<li data-target="#my-pics" data-slide-to="1"></li>
+<li data-target="#my-pics" data-slide-to="2"></li>
+<li data-target="#my-pics" data-slide-to="3"></li>
+  </ol>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <div class="carousel-inner">
+      <!-- Previous/Next controls -->
+      <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+      <span class="icon-prev" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+      <span class="icon-next" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+      </a>
+      <div class="item active" id="panel2">
+         <p class="download">
+<a href="https://scontent.fnbo1-1.fna.fbcdn.net/v/t1.0-1/c27.0.160.160/p160x160/12240148_935641729852576_5928412986105777099_n.jpg?oh=214a77825a0b7a71ca4bc52088f41b88&oe=59A9C531" target="_blank" >download</a></p>
+      </div>
+      <div class="item" id="panel3">
+         <form class="frm" action="index.html" method="post">
+
+   <div class="pop"><a href="#" data-dismiss="data">&times;</a>
+<!-- <a href="javascript:window.close" class="close">x</a> -->
+   </div>
+   <button type="submit" name="button" class="ok">ok</button>
+         </form>
+<script type="text/javascript">
+
+$(document).ready(function () {
+   $(".item form").submit(function(event) {
+
+      $(".pop").show();
+
+      event.preventDefault();
+   });
+});
+
+// $(document).ready(function () {
+//    $(".item form").close(function(event) {
+//
+// var popup=$(".pop").show();
+//
+//       $(".pop").close(popup);
+//       event.preventDefault();
+//    });
+// });
+
+
+</script>
+
+
+      </div>
+      <div class="item" id="panel4">
+
+      </div>
+      <div class="item" id="panel5">
+
+
+
+</div>
+
+      </div>
+
+   </div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="js\bootstrap.min.js">
+
+</script>
   </body>
 </html>

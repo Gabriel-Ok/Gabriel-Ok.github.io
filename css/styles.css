@@ -1,7 +1,7 @@
 body
 {
    /*background-color: blue;*/
-   background-image: url("../mine.jpg");
+   background-image: url("../ANJU6ID2XK.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -15,11 +15,12 @@ height: 660px;
 /*width: 500px;*/
 /*z-index: 50;*/
 background-color: grey;
+background-image: url();
 position:relative;
 opacity: 0.5;
 
 }
-.pop
+#pop
 {
    width: 100px;
    height: 200px;
@@ -69,6 +70,7 @@ margin: 0px;
 .col-sm-2
 {
    height: 100px;
+   color:
    /*width: 200px;*/
    opacity: 0.5;
    background-color: #1a1aff
@@ -88,6 +90,7 @@ margin: 0px;
 .col-sm-2:hover .icon
 {
    color: white;
+   text-shadow: 0px 0px;
 }
 
 #panel3
@@ -129,7 +132,8 @@ background-color: black;
 font-family: 'Akronim', cursive;
 font-size: 180%;
 font-weight: bold;
-color: grey;
+color: #bbff33;
+text-shadow: 3px 3px 2px #000000;
 text-align: center;
 }
 

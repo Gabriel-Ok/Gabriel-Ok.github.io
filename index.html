@@ -9,10 +9,10 @@
     <script type="text/javascript" src="js\jquery.js">
 
     </script>
-    <title>Gabriel-Ok.com</title>
+    <title>gabriel-ok.github.io</title>
   </head>
   <body>
-<<<<<<< HEAD
+
 <div class="container">
    <div class="col-sm-12">
 
@@ -70,7 +70,7 @@
       <div class="item" id="panel3">
          <form class="frm" action="index.html" method="post">
 
-   <div class="pop"><a href="#" data-dismiss="data">&times;</a>
+   <div id="pop" class="alert alert-success alert-dismissable fade in" ><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 <!-- <a href="javascript:window.close" class="close">x</a> -->
    </div>
    <button type="submit" name="button" class="ok">ok</button>
@@ -80,7 +80,7 @@
 $(document).ready(function () {
    $(".item form").submit(function(event) {
 
-      $(".pop").show();
+      $("#pop").show();
 
       event.preventDefault();
    });

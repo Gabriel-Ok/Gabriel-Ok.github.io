@@ -11,26 +11,26 @@
     </script>
     <title>gabriel-ok.github.io</title>
   </head>
-  <body>
+  <body id="home">
 
 <div class="container">
-   <div class="col-sm-12">
+   <div class="col-sm-12" >
 
 
 
-      <a href="#"><span class="col-sm-2"><br>
+      <a href="#home"><span class="col-sm-2"><br>
 <marquee behavior="slide" direction="left" class="icon">home</marquee>
       </span></a>
       <a href="#panel1"><span class="col-sm-2"><br>
    <marquee behavior="slide" direction="left" class="icon">interests</marquee>
       </span></a>
-      <a href="#panel2"><span class="col-sm-2"><br>
+      <a href="#myCarousel"><span class="col-sm-2"><br>
    <marquee behavior="slide" direction="left" class="icon">portfolio</marquee>
       </span></a>
-      <a href="#panel3"><span class="col-sm-2"><br>
+      <a href="#myCarousel"><span class="col-sm-2"><br>
    <marquee behavior="slide" direction="left" class="icon">about me</marquee>
       </span></a>
-      <a href="#panel4"><span class="col-sm-2"><br>
+      <a href="#myCarousel"><span class="col-sm-2"><br>
 <marquee behavior="slide" direction="left" class="icon">contacts</marquee>
       </span></a>
    </div>
@@ -75,16 +75,34 @@
    </div>
    <button type="submit" name="button" class="ok">ok</button>
          </form>
+
+
+
+
+
+
+         <!--javascript for pop up in panel 3  -->
+
+         
 <script type="text/javascript">
 
 $(document).ready(function () {
    $(".item form").submit(function(event) {
 
-      $("#pop").show();
 
-      event.preventDefault();
+
+
+         $("#pop").show();
+         event.preventDefault();
+
    });
-});
+
+
+
+
+
+   });
+
 
 // $(document).ready(function () {
 //    $(".item form").close(function(event) {
@@ -116,7 +134,28 @@ $(document).ready(function () {
 
 </div>
 
+<script type="text/javascript">
+$(document).ready(function () {
+   $("a").on('click', function (event) {
 
+      if (this.hash !=="") {
+         event.preventDefault();
+         var hash= this.hash;
+         $('html, body').animate({
+
+            scrollTop:
+            $(hash).offset().top
+         },800,function () {
+
+window.location.hash=hash;
+
+
+      });
+      }
+   });
+});
+
+</script>
 
 
 <script type="text/javascript" src="js\bootstrap.min.js">

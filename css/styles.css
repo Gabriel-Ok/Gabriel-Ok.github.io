@@ -6,19 +6,68 @@ body
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-
+overflow-y: hidden;
 }
+canvas
+{
+
+   border: 1px solid black;
+   /*width: 100%;*/
+}
+.overlay
+{
+   z-index: 280;
+   height: 660px;
+   width: 100%;
+   background-color: rgba(20, 20, 20, 0.8);
+   margin: 0;
+   position:absolute;
+}
+
 
 #panel1
 {
 height: 660px;
 /*width: 500px;*/
-/*z-index: 50;*/
-background-color: grey;
-background-image: url();
-position:relative;
-opacity: 0.5;
+z-index: 49;
+margin-bottom: 0;
+background-color: rgba(20, 20, 20, 0.6);
+/*position: absolute;*/
+/*opacity: 0.5;*/
 
+}
+hr
+{
+   height: 1px;
+   color: blue;
+   display: block;
+}
+
+#portfolio
+{
+   top: 20%;
+   font-size: 200%;
+   color: white;
+   font-style: italic;
+   font-family: serif;
+}
+ .col-xs-6
+{
+   height: 660px;
+   left: 0;
+   margin: 0;
+   /*opacity: 1;*/
+   border: 0;
+   /*position: relative;*/
+
+}
+.my-img
+{
+float: right;
+margin-right: -113px;
+height: 600px;
+   border: 0px;
+   padding: 0;
 }
 #pop
 {
@@ -52,12 +101,16 @@ height: 660px;
 z-index: 100;
 background-color: white;
 margin: 0px;
+background-image: url("../ping1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 /*position: absolute;*/
 
 }
 .container
 {
    height: 300px;
+   /*width: 100%;*/
    z-index: 48;
 
 
@@ -65,7 +118,7 @@ margin: 0px;
 .col-sm-12
 {
    position: fixed;
-   z-index: 102;
+   z-index: 302;
 }
 .col-sm-2
 {
@@ -99,6 +152,9 @@ height: 660px;
 /*width: 500px;*/
 z-index: 100;
 background-color: green;
+background-image: url("../mkt1.png");
+background-repeat: no-repeat;
+background-size: cover;
 /*position: absolute;*/
 
 }
@@ -108,18 +164,13 @@ height: 660px;
 /*width: 500px;*/
 z-index: 100;
 background-color: orange;
+background-image: url("../fd1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 /*position: absolute;*/
 
 }
-#panel5
-{
-height: 660px;
-/*width: 500px;*/
-z-index: 100;
-background-color: black;
-/*position: absolute;*/
 
-}
 .headn
 {
    color: white;
@@ -135,6 +186,25 @@ font-weight: bold;
 color: #b3b300;
 text-shadow: 3px 3px 2px #000000;
 text-align: center;
+}
+.carousel-indicators
+{
+   z-index: 10000;
+}
+.aboutme
+{
+   font-size: 200%;
+   color: white;
+   font-style: italic;
+   font-family: serif;
+
+}
+#imag
+{
+float: left;
+   /*position: absolute;*/
+   margin: 0px;
+   border: 0px;
 }
 
 .right.carousel-control
